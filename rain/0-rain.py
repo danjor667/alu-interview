@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+doc
+"""
 
 
 def rain(walls: list) -> int:
