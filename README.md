@@ -1,1 +1,1 @@
-minimum operations
+solutions to some interview questions
