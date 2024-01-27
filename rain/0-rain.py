@@ -3,8 +3,14 @@
 
 def rain(walls: list) -> int:
     """
-    >>> nums = [0,1,0,2,1,0,1,3,2,1,2,1]
-    >>> print(rain(nums))
+    >>> walls = [0,1,0,2,1,0,1,3,2,1,2,1]
+    >>> print(rain(walls))
+    6
+    >>> walls = [0, 1, 0, 2, 0, 3, 0, 4]
+    >>> print(rain(walls))
+    6
+    >>> walls = [2, 0, 0, 4, 0, 0, 1, 0]
+    >>> print(rain(walls))
     6
     """
 
@@ -28,8 +34,3 @@ def rain(walls: list) -> int:
 time complexity O(n^2)
 space complexity O(1)
 """
-
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
