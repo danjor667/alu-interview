@@ -1,27 +1,27 @@
 #!/usr/bin/python3
 
 
-def trap(height: list) -> int:
+def rain(walls: list) -> int:
     """
     >>> nums = [4,2,0,3,2,5]
-    >>> print(trap(nums))
+    >>> print(rain(nums))
     9
     """
     i = 0
-    j = len(height) - 1
-    max_left = height[i]
-    max_right = height[j]
+    j = len(walls) - 1
+    max_left = walls[i]
+    max_right = walls[j]
     max_area = 0
     while i <= j:
         if max_left <= max_right:
-            if max_left <= height[i]:
-                max_left = height[i]
-            max_area += max_left - height[i]
+            if max_left <= walls[i]:
+                max_left = walls[i]
+            max_area += max_left - walls[i]
             i += 1
         else:
-            if max_right <= height[j]:
-                max_right = height[j]
-            max_area += max_right - height[j]
+            if max_right <= walls[j]:
+                max_right = walls[j]
+            max_area += max_right - walls[j]
             j -= 1
     return max_area
 
