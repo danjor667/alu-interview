@@ -15,6 +15,9 @@ def _find_next(current):
 
 def pascal_triangle(n):
     """ doc """
+    if n <= 0:
+        return []
+
     res = [[1]]
     for i in range(n-1):
         res.append(_find_next(res))
